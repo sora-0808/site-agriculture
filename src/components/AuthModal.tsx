@@ -28,7 +28,7 @@ const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, onLogin }) => {
   ];
 
   if (!isOpen) return null;
-
+{    public/images/photo02.jpg{    public/images/photo02.jpg{    public/images/photo02.jpg
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Simulate authentication

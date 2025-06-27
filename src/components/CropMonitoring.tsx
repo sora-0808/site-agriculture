@@ -21,7 +21,7 @@ const CropMonitoring: React.FC = () => {
       planted: '20 Juin 2024',
       status: 'Floraison',
       health: 92,
-      image: 'public/image/photo02.jpg'
+      image: 'public/images/photo02.jpg'
     },
     {
       id: 'mais',
@@ -30,7 +30,7 @@ const CropMonitoring: React.FC = () => {
       planted: '10 Juin 2024',
       status: 'Maturation',
       health: 78,
-      image: 'public/image/photo3.jpg' // Chemin relatif basé sur le dossier public
+      image: 'https://unsplash.com/fr/photos/champ-de-mais-vert-pendant-la-journee-WH5r2BAJbm4'
     }
   ];
 
@@ -39,7 +39,7 @@ const CropMonitoring: React.FC = () => {
       date: '25 Nov 2024',
       action: 'Irrigation',
       crop: 'Mil',
-      notes: 'Irrigation matinale - 2h'
+      notes: 'Irrigation matinale - 2 heures'
     },
     {
       date: '23 Nov 2024',
@@ -71,7 +71,7 @@ const CropMonitoring: React.FC = () => {
     {
       type: 'info',
       title: 'Conseil - Maïs',
-      message: 'Période idéale pour la récolte dans 2-3 semaines.',
+      message: 'Période idéale pour la récolte dans 2 à 3 semaines.',
       priority: 'medium'
     }
   ];
@@ -81,10 +81,10 @@ const CropMonitoring: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Suivi de vos Cultures
+            Suivi de vos cultures
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Surveillez l'état de vos cultures en temps réel et recevez des recommandations personnalisées
+            Surveillez l'état de vos cultures en temps réel et recevez des recommandations personnalisées.
           </p>
         </div>
 
@@ -122,15 +122,15 @@ const CropMonitoring: React.FC = () => {
                 
                 <div className="space-y-2 mb-4">
                   <div className="flex justify-between text-sm">
-                    <span className="text-gray-600">Surface:</span>
+                    <span className="text-gray-600">Surface :</span>
                     <span className="font-medium">{crop.area}</span>
                   </div>
                   <div className="flex justify-between text-sm">
-                    <span className="text-gray-600">Planté le:</span>
+                    <span className="text-gray-600">Planté le :</span>
                     <span className="font-medium">{crop.planted}</span>
                   </div>
                   <div className="flex justify-between text-sm">
-                    <span className="text-gray-600">Statut:</span>
+                    <span className="text-gray-600">Statut :</span>
                     <span className="font-medium text-green-600">{crop.status}</span>
                   </div>
                 </div>
@@ -154,7 +154,7 @@ const CropMonitoring: React.FC = () => {
 
                 <div className="flex space-x-2">
                   <button className="flex-1 bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700 transition-colors text-sm font-medium">
-                    Voir détails
+                    Voir les détails
                   </button>
                   <button className="bg-gray-100 text-gray-600 p-2 rounded-lg hover:bg-gray-200 transition-colors">
                     <Edit3 className="w-4 h-4" />
@@ -177,7 +177,7 @@ const CropMonitoring: React.FC = () => {
           {/* Recent Activities */}
           <div className="bg-white rounded-2xl p-6 shadow-lg">
             <div className="flex items-center justify-between mb-6">
-              <h3 className="text-xl font-bold text-gray-900">Activités Récentes</h3>
+              <h3 className="text-xl font-bold text-gray-900">Activités récentes</h3>
               <Calendar className="w-6 h-6 text-green-600" />
             </div>
             
