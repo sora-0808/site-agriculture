@@ -23,7 +23,7 @@ const CropMonitoring: React.FC = () => {
       health: 92,
       image: 'image/photo02.jpg'
     },
-    {
+    {    public/images/photo02.jpg
       id: 'mais',
       name: 'Maïs',
       area: '3.2 ha',
