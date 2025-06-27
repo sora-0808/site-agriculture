@@ -21,16 +21,16 @@ const CropMonitoring: React.FC = () => {
       planted: '20 Juin 2024',
       status: 'Floraison',
       health: 92,
-      image: 'image/photo02.jpg'
+      image: 'public/image/photo02.jpg'
     },
-    {    public/images/photo02.jpg
+    {
       id: 'mais',
       name: 'Maïs',
       area: '3.2 ha',
       planted: '10 Juin 2024',
       status: 'Maturation',
       health: 78,
-      image: 'https://images.pexels.com/photos/547263/pexels-photo-547263.jpeg?auto=compress&cs=tinysrgb&w=400'
+      image: 'public/image/photo3.jpg' // Chemin relatif basé sur le dossier public
     }
   ];
 
